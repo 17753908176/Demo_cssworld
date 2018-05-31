@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .parent1{
+            margin: 0 auto;
+            width: 400px;
+            border: 1px solid red;
+            text-align: center;
+        }
+        .parent2{
+            margin: 0 auto;
+            width: 400px;
+            border: 1px solid black;
+            text-align: center;
+        }
+        .son{
+            border-left: 10px solid red;
+            border-right: 10px solid red;
+            padding: 0 100px;
+        }
+        header{
+            height: 50px;
+            background: indigo;
+        }
+        nav{
+            padding: 0 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        /*在导航中 把每个li的box-sizing属性给为border-box 便于在样式修改的时候，只需要修改li里面的值就可以，便于代码的维护*/
+        nav li{
+            list-style: none;
+            width: 100px;
+            box-sizing: border-box;
+            border-right: 2px solid silver;
+            border-left: 2px solid silver;
+            text-align: center;
+        }
+        nav li a{
+            text-decoration: none;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <li><a href="#">首页</a></li>
+        <li><a href="#">关于</a></li>
+        <li><a href="#">产品</a></li>
+    </nav>
+</header>
+<div class="parent1">sdfs</div>
+<div class="parent2">
+    <div class="son">sdf</div>
+</div>
+</body>
+</html>
